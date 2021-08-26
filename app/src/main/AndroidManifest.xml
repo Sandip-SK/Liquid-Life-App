@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sandip.liquidlifev1beta">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LiquidLifeV1beta">
+        <activity android:name=".searchresults"></activity>
+        <activity android:name=".about" />
+        <activity android:name=".search" />
+        <activity android:name=".faq3" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".faq2" />
+        <activity android:name=".faq1" />
+        <activity android:name=".faq" />
+        <activity android:name=".availableDonors" />
+        <activity android:name=".findDonor" />
+        <activity android:name=".recent" />
+        <activity android:name=".login" />
+        <activity android:name=".register" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

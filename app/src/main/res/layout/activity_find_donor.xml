@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".findDonor">
+
+    <Button
+        android:id="@+id/findDonorButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="225dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="47dp"
+        android:background="#FF8080"
+        android:onClick="findDonor"
+        android:text="Find Donor"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spPatientBloodGroup" />
+
+    <EditText
+        android:id="@+id/etPatientLocation"
+        android:layout_width="319dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPatientContact" />
+
+    <EditText
+        android:id="@+id/etPatientContact"
+        android:layout_width="319dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Contact No"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPatientName" />
+
+    <Spinner
+        android:id="@+id/spPatientBloodGroup"
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPatientLocation" />
+
+    <EditText
+        android:id="@+id/etPatientName"
+        android:layout_width="319dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:hint="Patient Name"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="235dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFF7B5"
+        android:text="Find Donor"
+        android:textAlignment="center"
+        android:textColor="#FD6D6D"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
